@@ -1,0 +1,24 @@
+Step 1: Start a new game
+Start a new game. A grid of gray squares will appear.
+
+Tip
+Start on the easiest setting, and work your way up to harder settings.
+
+Step 2: Click on a square
+Left-click on any gray square. On a Mac, simply click on it. If there is a mine hidden under the square, you immediately lose the game. If there isn't a mine under the square, there will be a number – one through eight –indicating how many mines are under the eight adjacent squares.
+
+Step 3: Locate other safe squares
+Determine safe squares by using the uncovered numbers. Lower numbers indicate fewer mines adjacent to that square. If the number is a "1," then there is only one mine around that square, and seven safe squares.
+
+Step 4: Flag possible mines
+Flag squares that you deduce are hiding mines by right-clicking on them. On a Mac, hit the option key at the same time you click the mouse.
+
+Tip
+Improperly flagging a square can cost you the game.
+
+Step 5: Locate all the mines
+Locate all the mines and uncover all the number squares to win the game and become the ultimate minesweeper.
+
+
+RULES:
+The object of the game is to uncover the map without clicking on any mines. Open a new game then left click randomly until you uncover some space and information to work with. If you click on a mine, you lose the game. Click on the smiley face to start a new game. A numbered square indicates how many mines are adjacent to that square either above, below, right, left or diagonally. Spaces not adjacent to any mines are blank, showing no number. The lowest number is 1 and the highest is 8. Using reason and deduction, use the known information from the revealed numbers to figure out where the mines are located. Right click to flag a spot you know where a mine is. Right click on a flagged to clear the mark. You will be unable to accidentally left click a marked square. If you perform a right and left click simultaneously on a number that has the corresponding number of flags adjacent to it, it will open all the squares surrounding that number that don’t have flags. You can also left click on the number to accomplish this. Once all the mines have been properly marked and the rest of the board cleared, you win.

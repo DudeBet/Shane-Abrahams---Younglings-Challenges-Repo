@@ -1,0 +1,327 @@
+@import url(https://fonts.lug.ustc.edu.cn/css?family=Righteous);
+/*@import url(https://fonts.googleapis.com/css?family=Righteous);*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /* background: #EEE; */
+  font: 4.5em/1 Righteous, Impact;
+  border: none;
+}
+
+body {
+  animation: bg-color 10s linear infinite;
+  -webkit-animation: bg-color 10s linear infinite;
+}
+
+@-webkit-keyframes bg-color {
+  0%{ background-color: #0cc; }
+  20%{ background-color: #f1c40f; }
+  40%{ background-color: #1abc9c; }
+  60%{ background-color: #3498db; }
+  80%{ background-color: #9b59b6; }
+  100%{ background-color: #e74c3c; }
+}
+@keyframes bg-color {
+  0% { background-color: #0CC; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.moverect {
+  animation: moving-the-rect 4s ease-in-out;
+  animation-fill-mode: both;
+  -webkit-animation: moving-the-rect 4s ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation: moving-the-rect 4s ease-in-out;
+  -moz-animation-fill-mode: both;
+  /* animation-iteration-count: 2; */
+}
+
+
+#mask-path {
+  animation: moving-the-mask 1.7s ease-in-out;
+  animation-delay: 2.3s;
+  animation-fill-mode: both;
+  -webkit-animation-name: moving-the-mask 1.7s ease-in-out;
+  -webkit-animation-delay: 2.3s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-name: moving-the-mask 1.7s ease-in-out;
+  -moz-animation-delay: 2.3s;
+  -moz-animation-fill-mode: both;
+}
+
+
+
+.colorrect .moverect:nth-child(1) {
+  fill: #ffffff;
+  border: none;
+}
+
+.colorrect .moverect:nth-child(2) {
+  fill: #ef476f;
+  border: none;
+}
+
+.colorrect .moverect:nth-child(3) {
+  fill: #ffd166;
+  border: none;
+}
+
+.colorrect .moverect:nth-child(4) {
+  fill: #06d6a0;
+  border: none;
+}
+
+.colorrect .moverect:nth-child(5) {
+  fill: #118ab2;
+  border: none;
+}
+
+.colorrect .moverect:nth-child(6) {
+  fill: #073b4c;
+  border: none;
+}
+
+.shadow {
+  -webkit-transform: translate(5px, 5px);
+  -ms-transform: translate(5px, 5px);
+  transform: translate(5px, 5px);
+}
+
+.moverect--shadow{
+  height: 100%;
+  width: 100%;
+  fill: #000;
+  fill-opacity: .2;
+}
+
+
+/*--Moving the rect elements.--------------------------*/
+
+@-webkit-keyframes moving-the-rect {
+	0%{-webkit-transform-origin: 0 150px;
+       -ms-transform-origin: 0 150px;
+       transform-origin: 0 150px;
+       -webkit-transform: scale(0, 1) translate(0, 0);
+       -ms-transform: scale(0, 1) translate(0, 0);
+       transform: scale(0, 1) translate(0, 0);
+      }
+    40% {
+       -webkit-transform: scale(1, 1) translate(20px, 0);
+       -ms-transform: scale(1, 1) translate(10px, 0);
+       transform: scale(1, 1) translate(20px, 0);
+      }
+    40% {
+       -webkit-transform: scale(1, 1) translate(10px, 0);
+       -ms-transform: scale(1, 1) translate(10px, 0);
+       transform: scale(1, 1) translate(10px, 0);
+    }
+    100% {
+       -webkit-transform: scale(0.24, 1) translate(13px, 0);
+       -ms-transform: scale(0.24, 1) translate(13px, 0);
+       transform: scale(0.24, 1) translate(13px, 0);
+    }
+}
+
+@-moz-keyframes moving-the-rect {
+	0%{-webkit-transform-origin: 0 150px;
+       -ms-transform-origin: 0 150px;
+       -moz-transform-origin: 0 150px;
+       transform-origin: 0 150px;
+       -webkit-transform: scale(0, 1) translate(0, 0);
+       -ms-transform: scale(0, 1) translate(0, 0);
+       -moz-transform: scale(0, 1) translate(0, 0);
+       transform: scale(0, 1) translate(0, 0);
+      }
+    40% {
+       -webkit-transform: scale(1, 1) translate(20px, 0);
+       -ms-transform: scale(1, 1) translate(10px, 0);
+       -moz-transform: scale(1, 1) translate(10px, 0);
+       transform: scale(1, 1) translate(20px, 0);
+      }
+    40% {
+       -webkit-transform: scale(1, 1) translate(10px, 0);
+       -ms-transform: scale(1, 1) translate(10px, 0);
+       -moz-transform: scale(1, 1) translate(10px, 0);
+       transform: scale(1, 1) translate(10px, 0);
+    }
+    100% {
+       -webkit-transform: scale(0.24, 1) translate(13px, 0);
+       -ms-transform: scale(0.24, 1) translate(13px, 0);
+       -moz-transform: scale(0.24, 1) translate(13px, 0);
+       transform: scale(0.24, 1) translate(13px, 0);
+    }
+}
+
+@keyframes moving-the-rect {
+	0%{-webkit-transform-origin: 0 150px;
+       -ms-transform-origin: 0 150px;
+       transform-origin: 0 150px;
+       -webkit-transform: scale(0, 1) translate(0, 0);
+       -ms-transform: scale(0, 1) translate(0, 0);
+       transform: scale(0, 1) translate(0, 0);
+      }
+    40% {
+       -webkit-transform: scale(1, 1) translate(10px, 0);
+       -ms-transform: scale(1, 1) translate(10px, 0);
+       transform: scale(1, 1) translate(10px, 0);
+      }
+    40% {
+       -webkit-transform: scale(1, 1) translate(10px, 0);
+       -ms-transform: scale(1, 1) translate(10px, 0);
+       transform: scale(1, 1) translate(10px, 0);
+    }
+    100% {
+       -webkit-transform: scale(0.5, 1) translate(13px, 0);
+       -ms-transform: scale(0.5, 1) translate(13px, 0);
+       transform: scale(0.5, 1) translate(13px, 0);
+    }
+
+}
+
+
+/*--Moving the clippath element.------------------------*/
+
+@-webkit-keyframes moving-the-mask {
+	0%{-webkit-transform-origin: 0 150px;
+       -ms-transform-origin: 0 150px;
+       transform-origin: 0 150px;
+       -webkit-transform: scale(1, 1) translate(0px, 0);
+       -ms-transform: scale(1, 1) translate(0px, 0);
+       transform: scale(1, 1) translate(0px, 0);
+	}
+	100%{
+       -webkit-transform: scale(1, 1) translate(170px, 0);
+       -ms-transform: scale(1, 1) translate(170px, 0);
+       transform: scale(1, 1) translate(170px, 0);
+	}
+}
+
+@-moz-keyframes moving-the-mask{
+	0%{-webkit-transform-origin: 0 150px;
+       -ms-transform-origin: 0 150px;
+       -moz-transform-origin: 0 150px;
+       transform-origin: 0 150px;
+       -webkit-transform: scale(1, 1) translate(0px, 0);
+       -ms-transform: scale(1, 1) translate(0px, 0);
+       -moz-transform: scale(1, 1) translate(0px, 0);
+       transform: scale(1, 1) translate(0px, 0);
+	}
+	100%{
+       -webkit-transform: scale(1, 1) translate(170px, 0);
+       -ms-transform: scale(1, 1) translate(170px, 0);
+       -moz-transform: scale(1,1) translate(170px,0);
+       transform: scale(1, 1) translate(170px, 0);
+	}
+}
+
+@keyframes moving-the-mask {
+	0%{-webkit-transform-origin: 0 150px;
+       -ms-transform-origin: 0 150px;
+       transform-origin: 0 150px;
+       -webkit-transform: scale(1, 1) translate(0px, 0);
+       -ms-transform: scale(1, 1) translate(0px, 0);
+       transform: scale(1, 1) translate(0px, 0);
+	}
+	100%{
+       -webkit-transform: scale(1, 1) translate(170px, 0);
+       -ms-transform: scale(1, 1) translate(170px, 0);
+       transform: scale(1, 1) translate(170px, 0);
+	}
+}
+
+.dotted-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  animation: rotation 5s linear infinite;
+}
+.draw-in {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 10;
+  animation: draw 15s ease-in-out alternate infinite;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.item-to {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: ease;
+}
+
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+
+.bounce-3 {
+  animation-name: bounce-3;
+  animation-timing-function: ease;
+}
+
+
+@keyframes bounce-3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient-fade {
+  from {
+    transform: translate(10%, -10%) rotate(0deg);
+  }
+  to {
+    transform: translate(50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes gradient-fade-alt {
+  from {
+    transform: translate(-20%, 20%) rotate(0deg);
+  }
+  to {
+    transform: translate(-60%, 60%) rotate(360deg);
+  }
+}
